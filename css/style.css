@@ -1,56 +1,109 @@
-* {
+*{
   box-sizing: border-box;
 }
-
-body {
-  background-color: rgb(127,255,212);
+  body {
+    background-color: rgb(127,255,212);
+  }
+  
+  .container{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    width: 200px;
+    height: 350px;
+    background-color: rgb(239,239,239);
+    border-radius: 10px 10px 35px;
+    box-shadow: 5px 5px rgb(91,219,192);
+  }
+  
+  .lines{
+    display:inline-block;
+    border-bottom-style: solid;
+    border-bottom-color: whitesmoke;
+    border-width: 1px;
+    height: 20px;
+    width: 100%;
+    border-bottom-width: 3px;
+    /* border-bottom: 6px solid var(--stroke); */
+  }
+  
+.header{
+  padding: 3px;
 }
 
-.container{
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30%;
-  width: 200px;
-  height: 350px;
-  background-color: rgb(239,239,239);
-  border-radius: 10px 10px 35px;
-  box-shadow: 5px 5px rgb(91,219,192);
+.text1{
+  display:inline;
 }
 
-.line {
-  width: 100%;
-  border-top: 3px solid rgb(224, 219, 219);
-  margin-top: 20px;
+
+p{
+  font-size: 1%;
+  color: whitesmoke;
 }
 
-.border-screen{
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  top: 30px;
-  width: 160px;
-  height: 150px;
-  background-color: rgb(156,154,154);
-  border-radius: 10px 10px 25px;
-  box-shadow: 2px 2px black;
+.redl{
+  width: 20%;
+  height: 10px;
+  border-bottom-style: solid;
+  border-bottom-color: red;
+  background-color: red;
+}
+.bluel{
+  width: 20%;
+  height: 10px;
+  border-bottom-style: solid;
+  border-bottom-color: red;
+  background-color: lightblue;
 }
 
-.screen{
-  position: absolute;
-  margin:  20px;
-  width: 120px;
-  height: 110px;
-  background-color: rgb(190,171,91);
-  outline: 3px inset rgb(185,160,46);
-  /* box-shadow: -2px -2px rgb(101,87,25); */
+  #left {
+    border-right-style: solid;
+    border-right-color: whitesmoke;
+    display:inline-block;
+    width: 18%;
+    border-right-width: 3px;
+  }
+  
+  #center {
+    display:inline-block;
+    border-bottom-style: solid;
+    border-bottom-color: whitesmoke;
+    width: 60%;
 }
+  
+  #right{
+    display:inline-block;
+    border-left-style: solid;
+    border-left-width: 3px;
+    border-left-color:whitesmoke;
+}
+  
+  .border-screen{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 20px;
+    width: 160px;
+    height: 150px;
+    background-color: rgb(156,154,154);
+    border-radius: 10px 10px 25px;
+    box-shadow: 2px 2px black;
+  }
+  
+  .screen{
+    position: absolute;
+    margin:  20px;
+    margin-top: 10px;
 
-/* Position
-
-BoxModel
-
-Text 
-
-Visual
-
-Varios */
+    width: 120px;
+    height: 110px;
+    background-color: rgb(190,171,91);
+    outline: 3px inset rgb(185,160,46);
+    /* box-shadow: -2px -2px rgb(101,87,25); */
+  }
+  
+  /* Position
+  BoxModel
+  Text 
+  Visual
+  Varios */
