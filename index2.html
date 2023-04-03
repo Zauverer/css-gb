@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos Prácticos</title>
+    <style>
+        *,
+        *::after,
+        *::before{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+        flex-grow: 1; 
+        }
+
+        .titulares{
+            background-color: #222;
+            color: #EEE;
+            padding: 1rem;
+        }
+        
+        .header{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .menu ul{
+            list-style: none;
+        }
+
+        body {
+            display: flex;
+            flex-direction:column;
+            min-height: 100vh;;
+        }
+    @media screen and (min-width: 1024px) {
+        .header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .menu ul{
+            display: flex;
+        }
+        .menu li{
+            padding: .5rem;
+        }
+    }
+    .hero-image div{
+        display: flex;
+        justify-content: center;
+        background-color: rgba(0,0,0,0.75);
+        min-height: inherit;
+        align-items: center;
+        text-align: center;
+    }
+    .hero-image h1{
+        font-size: 5vw;
+    }
+    .hero-image{
+        min-height: 100vh;
+        background-repeat: no-repeat;
+        background-image: url("https://placeimg.com/1280/720/animals");
+        color: #FFF;
+    }
+</style>
+</head>
+
+<body>
+    <header class="titulares header">
+        <div class="logo">Logo</div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Seccion 1</a></li>
+                <li><a href="#">Seccion 2</a></li>
+                <li><a href="#">Seccion 3</a></li>
+                <li><a href="#">Seccion 4</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Contenido</h2>
+        <article class="hero-image">
+            <div>
+                <h1>Flexbox is cool</h1>
+
+            </div>
+        </article>
+    </main>
+    <footer class="titulares">
+        <h2>StickyFooter</h2>
+    </footer>
+</body>
+</html>
